@@ -88,15 +88,28 @@ displayMenu(menu.filter(m=>m.restaurant===restaurantId));
 
 function addCart(id){
 
-const item=menu.find(m=>m.id===id);
+const item = menu.find(m => m.id === id);
 
-cart.push(item);
+const existing = cart.find(c => c.id === id);
 
-localStorage.setItem("cart",JSON.stringify(cart));
+if(existing){
+
+existing.quantity = (existing.quantity || 1) + 1;
+
+}else{
+
+cart.push({
+...item,
+quantity:1
+});
+
+}
+
+localStorage.setItem("cart", JSON.stringify(cart));
 
 updateCart();
 
-alert("Added To Cart");
+alert("Added to Cart");
 
 }
 
