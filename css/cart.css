@@ -1,0 +1,33 @@
+.card{
+
+border:none;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.card img{
+
+height:180px;
+
+object-fit:cover;
+
+}
+
+button{
+
+margin:5px;
+
+}
+
+#grand{
+
+color:#FF6B35;
+
+font-size:32px;
+
+font-weight:bold;
+
+}
