@@ -1,0 +1,21 @@
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+.navbar-brand{
+
+font-size:20px;
+
+}
+
+}
