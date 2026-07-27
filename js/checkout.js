@@ -58,20 +58,24 @@ loadSummary();
 
 function placeOrder(){
 
+const form=document.getElementById("checkoutForm");
+
+if(!form.checkValidity()){
+
+form.reportValidity();
+
+return;
+
+}
+
 const order={
 
 customer:{
-
 name:document.getElementById("name").value,
-
 phone:document.getElementById("phone").value,
-
 address:document.getElementById("address").value,
-
 city:document.getElementById("city").value,
-
 pincode:document.getElementById("pincode").value
-
 },
 
 deliveryTime:document.getElementById("deliveryTime").value,
@@ -80,25 +84,15 @@ paymentMethod:document.getElementById("paymentMethod").value,
 
 items:cart,
 
-status:"Order Placed",
+status:"Preparing Food",
 
 date:new Date().toLocaleString()
 
 };
 
-if(
-order.customer.name==="" ||
-order.customer.phone==="" ||
-order.customer.address===""
-){
-
-alert("Please fill all required fields");
-
-return;
-
-}
-
 localStorage.setItem("currentOrder",JSON.stringify(order));
+
+localStorage.removeItem("cart");
 
 window.location.href="success.html";
 
