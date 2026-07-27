@@ -1,51 +1,69 @@
-const restaurants = [
+const menu = [
 
 {
-id:1,
-name:"Pizza World",
+id:101,
+restaurant:1,
+name:"Margherita Pizza",
+price:12,
+veg:true,
 rating:4.8,
-cuisine:"Italian",
-image:"images/pizza.jpg"
+image:"images/margherita.jpg",
+description:"Classic cheese pizza"
 },
 
 {
-id:2,
-name:"Burger King",
-rating:4.5,
-cuisine:"Fast Food",
-image:"images/burger.jpg"
-},
-
-{
-id:3,
-name:"Sushi House",
+id:102,
+restaurant:1,
+name:"Farmhouse Pizza",
+price:15,
+veg:true,
 rating:4.9,
-cuisine:"Japanese",
-image:"images/sushi.jpg"
+image:"images/farmhouse.jpg",
+description:"Loaded with vegetables"
 },
 
 {
-id:4,
-name:"Royal Biryani",
+id:103,
+restaurant:2,
+name:"Cheese Burger",
+price:10,
+veg:false,
 rating:4.7,
-cuisine:"Indian",
-image:"images/biryani.jpg"
+image:"images/burger.jpg",
+description:"Juicy grilled burger"
 },
 
 {
-id:5,
-name:"Taco Fiesta",
-rating:4.4,
-cuisine:"Mexican",
-image:"images/taco.jpg"
+id:104,
+restaurant:2,
+name:"Chicken Burger",
+price:11,
+veg:false,
+rating:4.8,
+image:"images/chickenburger.jpg",
+description:"Spicy chicken burger"
 },
 
 {
-id:6,
-name:"Healthy Bowl",
-rating:4.6,
-cuisine:"Healthy",
-image:"images/salad.jpg"
+id:105,
+restaurant:4,
+name:"Chicken Biryani",
+price:16,
+veg:false,
+rating:4.9,
+image:"images/biryani.jpg",
+description:"Hyderabadi Style"
+},
+
+{
+id:106,
+restaurant:6,
+name:"Greek Salad",
+price:9,
+veg:true,
+rating:4.5,
+image:"images/salad.jpg",
+description:"Healthy Fresh Salad"
 }
 
 ];
