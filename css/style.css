@@ -79,3 +79,26 @@ border:none;
 background:#ff5a1d;
 
 }
+.card{
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card img{
+
+object-fit:cover;
+
+}
+
+.badge{
+
+font-size:14px;
+
+}
