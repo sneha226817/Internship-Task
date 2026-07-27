@@ -1,0 +1,7 @@
+:root{
+  --primary:#FF6B35;
+  --secondary:#FFF8F0;
+  --dark:#2D1B12;
+  --light:#ffffff;
+  --gray:#777;
+}
